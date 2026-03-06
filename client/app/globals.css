@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --font-playfair: var(--font-playfair);
+  --font-jakarta: var(--font-jakarta);
+}
+
+:root {
+  --color-gold-400: #d4af37;
+  --color-gold-500: #c5a059;
+  --color-gold-600: #b08d55;
+}
+
+@layer base {
+  body {
+    background-color: #0a0a0a;
+    color: #f3f4f6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-playfair), serif;
+  }
+}
+
+@layer utilities {
+  .text-gold {
+    color: var(--color-gold-400);
+  }
+  .bg-gold {
+    background-color: var(--color-gold-500);
+  }
+  .border-gold {
+    border-color: var(--color-gold-500);
+  }
+}
